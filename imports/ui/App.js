@@ -55,6 +55,6 @@ class App extends Component {
 export default withTracker(() => {
     return {
         // Will sort tasks by newest entry
-        tasks: Tasks.find({}, { sort: {createdAt: -1} }).fetch(),
+        tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
     };
 })(App);
